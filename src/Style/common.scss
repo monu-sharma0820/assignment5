@@ -1,0 +1,45 @@
+@import '../Style/mixin.scss';
+@import '../Style/variable.scss';
+
+.main-container {
+  background: $primary-gradient;
+  position: relative;
+  display: flex;
+  padding: 50px 20px;
+   @include sm-desktop {
+     flex-direction: column;
+}
+ @include mobile{
+  padding: 20px;
+ }
+}
+
+.left-container {
+  background: $black-color;
+  margin-top: 70px;
+  width: 80%;
+  border-radius: 32px;
+  min-height: 550px;
+  margin-right: -300px;
+  z-index: 99;
+  padding: 10px;
+   @include sm-desktop {
+    width: 100%;
+   }
+   @include mobile{
+    margin-top: 0;
+   }
+
+}
+
+.right-container {
+  background: $white-color;
+  width: 65%;
+  border-radius: 32px;
+  min-height: 550px;
+  padding: 10px;
+ @include sm-desktop {
+    width: 100%;
+   }
+}
+

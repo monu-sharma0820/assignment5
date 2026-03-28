@@ -1,0 +1,43 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin boxContainer
+{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+// for sm-desktop 1200px media query
+@mixin sm-desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+// for tablet 1024px media query
+@mixin sm-tab {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+// for mobile 768px media query
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// for sm-mobile 400px media query
+
+@mixin sm-mobile {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+

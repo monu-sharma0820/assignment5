@@ -1,0 +1,48 @@
+@import '../Style/mixin.scss';
+@import '../Style/variable.scss';
+
+.trending-container {
+    @include boxContainer;
+
+    .title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white-color;
+
+        .trending {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+
+            img {
+                width: 27px;
+                height: 27px;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                height: 1px;
+                background: grey;
+                flex: 1;
+                margin-left: 10px;
+            }
+        }
+
+    }
+
+    .moviecards {
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,116 @@
+@import '../Style/mixin';
+@import '../Style/variable';
+
+.navbar {
+    @include boxContainer;
+
+    .sub-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .leftside-container {
+            display: flex;
+            gap: 12px;
+        }
+
+        .rightside-container {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 20px;
+
+                li {
+                    .nav-item {
+                        color: $white-color;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $yellow-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.whitecard {
+    .navbar {
+        .sub-navbar {
+            .leftside-container{
+                .black-image{
+                    color: #000;
+                    background-image: url('../Images/pinkimage-icon.png');
+                }
+            }
+            .rightside-container {
+                ul {
+                    li {
+                        .nav-item {
+                            color: $black-color;
+                            padding: 5px;
+
+                            &:hover {
+                                color: $pink-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .banner-section {
+        .first-section {
+            color: #000;
+        }
+
+        .second-section {
+            margin-right: 20px;
+            z-index: 0;
+
+            .img-fluid {
+                width: 221px;
+                height: 300px;
+            }
+
+            .image-section {
+                width: 198px;
+                height: 298px;
+            }
+        }
+    }
+
+    .trending-container {
+        margin-right: 0;
+
+        .title-container {
+            color: $black-color;
+
+            .trending {
+                justify-content: flex-end;
+                width: 80%;
+            }
+        }
+
+        .moviecards {
+            width: 100%;
+            flex-wrap: wrap;
+
+            .card-container {
+                h3 ,p {
+
+                    color: #000;
+                }
+            }
+        }
+    }
+}

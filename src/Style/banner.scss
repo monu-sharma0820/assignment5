@@ -1,0 +1,66 @@
+@import '../Style/mixin.scss';
+@import '../Style/variable.scss';
+
+.banner-section {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    align-items: center;
+    @include boxContainer;
+     @include sm-desktop {
+      flex-direction: column;
+   }
+
+    .first-section {
+        color: $white-color;
+        max-width: 450px;
+
+        .gradient-text {
+            background: $title-gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 10px 0px;
+        }
+
+        button {
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            color: $white-color;
+            cursor: pointer;
+            .watch-btn {
+                display: flex;
+                gap: 5px;
+
+            }
+            &:hover {
+                background-color:$pink-color;
+                color: $black-color;
+;
+            }
+        }
+
+
+    }
+
+    .second-section {
+        display: flex;
+        position: relative;
+
+        .img-fluid {
+            margin-right: -100px;
+            margin-top: 50px;
+            z-index: 99;
+            position: relative;
+        }
+
+        .img-fluids {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            z-index: 99;
+        }
+    }
+}

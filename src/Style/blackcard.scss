@@ -1,0 +1,13 @@
+@import '../Style/mixin.scss';
+@import '../Style/variable.scss';
+
+
+.whitecard-navbar {
+    .nav-item {
+        color: $black-color;
+
+        &:hover {
+            color: $pink-color;
+        }
+    }
+}

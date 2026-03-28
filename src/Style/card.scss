@@ -1,0 +1,20 @@
+@import '../Style/mixin';
+@import '../Style/variable';
+
+.card-container {
+  max-width: 200px;
+
+  h3 {
+    color: $white-color;
+    margin: 0px;
+  }
+
+  p {
+    color: $white-color;
+    margin: 10px 0px;
+  }
+  .img-fluid{
+    width: 150px;
+    height: 150px;
+  }
+}
