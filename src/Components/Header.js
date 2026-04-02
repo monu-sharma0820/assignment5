@@ -27,17 +27,17 @@ function Header({ setCategory, trendingRef }) {
                 <div className='rightside-container'>
                     <ul>
                         <li>
-                            <a href="" className='nav-item' onClick={(e) => { e.preventDefault(); handleClick("popular") }}>
+                            <a href="/popular" className='nav-item' onClick={(e) => { e.preventDefault(); handleClick("popular") }}>
                                 Popular
                             </a>
                         </li>
                         <li>
-                            <a href="" className='nav-item' onClick={(e) => { e.preventDefault(); handleClick("top_rated") }}>
+                            <a href="/top-rated" className='nav-item' onClick={(e) => { e.preventDefault(); handleClick("top_rated") }}>
                                 Top Rated
                             </a>
                         </li>
                         <li>
-                            <a href="" className='nav-item' onClick={(e) => { e.preventDefault(); handleClick("upcoming") }}>
+                            <a href="/upcoming" className='nav-item' onClick={(e) => { e.preventDefault(); handleClick("upcoming") }}>
                                 Upcoming
                             </a>
                         </li>
