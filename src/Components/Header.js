@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import '../Style/header.scss';
 import logo from '../Images/header-logo.png';
 import moviebazer from '../Images/moviebazer.png';

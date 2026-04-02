@@ -26,7 +26,7 @@ function Trending({category }) {
     <div className='trending-container'>
       <div className='title-container'>
         <div className='trending'>
-          <img src={trendingicons} />
+          <img src={trendingicons} alt='image-one' />
           <h2>Trending</h2>
           <div className="line"></div>
         </div>

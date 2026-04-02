@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, {useRef, useState } from 'react';
 import Header from './Header'
 import '../Style/common.scss';
 import '../Style/blackcard.scss';
