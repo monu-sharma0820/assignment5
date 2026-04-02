@@ -23,9 +23,9 @@ function Banner() {
                 </button>
             </div>
             <div className='second-section'>
-                <img src={spiderman} className='img-fluid' />
-                <img src={icons} className='img-fluids' width="50" height="50" />
-                <img src={gardian}  className='image-section'/>
+                <img src={spiderman} className='img-fluid'  alt='spiderman'/>
+                <img src={icons} className='img-fluids' width="50" height="50"  alt='videoicon'/>
+                <img src={gardian}  className='image-section' alt='gardian-img'/>
             </div>
         </div>
     )
