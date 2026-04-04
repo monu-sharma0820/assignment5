@@ -3,15 +3,16 @@ import '../Style/common.scss';
 import Header from './Header';
 import Banner from './Banner';
 import Trending from './Trending';
-function BlackCards() {
+function BlackCards({ theme, toggleTheme }) {
   const [category, setCategory] = useState("popular");
   const trendingRef = useRef(null);
-  return (
-    <div className='left-container' >
-      <Header setCategory={setCategory} trendingRef={trendingRef} />
+  return (  
+    <div className={`left-container ${theme}`}>
+       <button onClick={toggleTheme} className='btn'>Toggle Theme</button>
+      <Header setCategory={setCategory} trendingRef={trendingRef}   />
       <Banner />
       <div ref={trendingRef}>
-        <Trending category={category} />
+     <Trending category={category} />
       </div>
     </div>
   )

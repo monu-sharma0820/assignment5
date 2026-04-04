@@ -7,9 +7,10 @@
     overflow: hidden;
     align-items: center;
     @include boxContainer;
-     @include sm-desktop {
-      flex-direction: column;
-   }
+
+    @include sm-desktop {
+        flex-direction: column;
+    }
 
     .first-section {
         color: $white-color;
@@ -24,21 +25,23 @@
         }
 
         button {
-            background-color: transparent;
+            background-color: #c94060;
             padding: 10px;
             border-radius: 10px;
             border: 1px solid grey;
             color: $white-color;
             cursor: pointer;
+
             .watch-btn {
                 display: flex;
                 gap: 5px;
 
             }
+
             &:hover {
-                background-color:$pink-color;
+                background-color: $pink-color;
                 color: $black-color;
-;
+                ;
             }
         }
 
@@ -64,3 +67,4 @@
         }
     }
 }
+

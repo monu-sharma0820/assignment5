@@ -9,6 +9,17 @@
         justify-content: space-between;
         align-items: center;
         margin: 20px 0;
+
+        .theme-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: #C65473;
+            width: 100px;
+            border-radius: 10px;
+        }
+
         @include mobile {
             flex-direction: column;
         }
@@ -19,6 +30,10 @@
         }
 
         .rightside-container {
+            .btn {
+                color: rgb(238, 16, 53);
+            }
+
             ul {
                 display: flex;
                 list-style: none;
@@ -44,12 +59,13 @@
 .whitecard {
     .navbar {
         .sub-navbar {
-            .leftside-container{
-                .black-image{
+            .leftside-container {
+                .black-image {
                     color: #000;
                     background-image: url('../Images/pinkimage-icon.png');
                 }
             }
+
             .rightside-container {
                 ul {
                     li {
@@ -62,6 +78,10 @@
                             }
                         }
                     }
+                }
+                .banner-section .first-section button
+                {
+                    background-color: #C65473;
                 }
             }
         }
@@ -105,8 +125,14 @@
             width: 100%;
             flex-wrap: wrap;
 
+            @include mobile {
+                flex-wrap: nowrap;
+            }
+
             .card-container {
-                h3 ,p {
+
+                h3,
+                p {
 
                     color: #000;
                 }
