@@ -49,24 +49,31 @@
 
   &.light {
     background: $black-color;
+
     .banner-section .first-section {
       color: #fff;
     }
+
   }
 
   &.dark {
     background: $white-color;
+
     .banner-section .first-section {
       color: #000;
     }
-    .navbar .sub-navbar .rightside-container ul li .nav-item
-      {
-        color: #000;
-      }
-      .banner-section .first-section button
-      {
-        background-color: rgb(226, 91, 116);
-      }
+
+    .navbar .sub-navbar .rightside-container ul li .nav-item {
+      color: #000;
+    }
+
+    .banner-section .first-section button {
+      background-color: rgb(226, 91, 116);
+    }
+
+    .trending-container .title-container {
+      color: #000;
+    }
   }
 
 }
@@ -85,26 +92,31 @@
 
   &.light {
     background: $white-color;
-    .banner-section .first-section {
-        color: #000;
 
-      }
+    .banner-section .first-section {
+      color: #000;
+
+    }
 
   }
 
   &.dark {
     background: $black-color;
-    .banner-section .first-section {
-        color: #fff;  
 
-      }
-      .navbar .sub-navbar .rightside-container ul li .nav-item
-      {
-        color: #fff;
-      }
-      .banner-section .first-section button
-      {
-        background-color: rgb(226, 91, 116);
-      }
+    .banner-section .first-section {
+      color: #fff;
+
+    }
+
+    .navbar .sub-navbar .rightside-container ul li .nav-item {
+      color: #fff;
+    }
+
+    .banner-section .first-section button {
+      background-color: rgb(226, 91, 116);
+    }
+     .trending-container .title-container {
+      color: #fff;
+    }
   }
 }
