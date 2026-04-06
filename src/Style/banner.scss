@@ -57,6 +57,11 @@
             margin-top: 50px;
             z-index: 99;
             position: relative;
+
+            @include mobile {
+                width: 221px;
+                height: 300px;
+            }
         }
 
         .img-fluids {
@@ -65,6 +70,12 @@
             left: 30%;
             z-index: 99;
         }
+
+        .image-section {
+            @include mobile {
+                width: 198px;
+                height: 298px;
+            }
+        }
     }
 }
-
