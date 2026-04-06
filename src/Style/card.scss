@@ -13,8 +13,14 @@
     color: $white-color;
     margin: 10px 0px;
   }
-  .img-fluid{
+
+  .img-fluid {
     width: 150px;
     height: 150px;
+    transition: transform 0.3s ease;
+  }
+
+  .img-fluid:hover {
+    transform: scale(1.08);
   }
 }
