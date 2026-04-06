@@ -2,14 +2,14 @@ import React from 'react';
 import '../Style/header.scss';
 import logo from '../Images/header-logo.png';
 import moviebazer from '../Images/moviebazer.png';
-function Header({ setCategory, trendingRef}) {
+function Header({ setCategory, trendingRef }) {
 
     const handleClick = (type) => {
         setCategory(type);
 
         trendingRef.current.scrollIntoView({
-            left: 0,
-            behavior: 'smooth',
+            behavior: "smooth",
+            block: "start"
         });
     };
 
